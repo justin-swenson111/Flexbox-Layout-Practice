@@ -1,0 +1,233 @@
+body{
+    width: 80%;
+    color: white;
+    text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000; 
+font-size: large;
+}
+/* setting the base dimensions and font style of the page */
+a{
+    color: white;
+    text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000; 
+}
+/* setting the font style for hyperlinks */
+.headerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    align-content: center;
+    flex-wrap: wrap;
+    border: 5px solid black;
+}
+/* creating a flex box fr the header, centering the content, and making it so it wraps*/
+.headerFlex>div{
+    padding:20px;
+    font-size: 30px;
+}
+/* formatting and size for header text */
+.head1{
+    order:2;
+}
+.head2{
+    order:1;
+}
+/* setting the order of the header items */
+
+.navFlex{
+    display: flex;
+    justify-content: space-evenly;  
+    flex-wrap: wrap;
+    border: 5px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: xx-large;
+}
+/* creating a flexbox for the navbar, spacing items evenly, and csetting formatting */
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* flex box for the side bar and main section
+wrap is disabled to prevent issues with formatting*/
+.content > section > div{
+    display: flex;
+    flex-direction: column;
+}
+/* formatting for columns of inforamtion in the main section */
+.content > section{
+    flex-grow: 8;
+    padding-left: 2rem;
+    width: 93%;
+    border: 5px solid black;
+}
+/* formatting for main section as a whole */
+
+.content > aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 7%;
+    flex-grow: 2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 5px solid black;
+    font-size: x-large;
+}
+/* setting the formatting(justification and alignment) for the side bar as well as the font style */
+aside > a{
+    padding-top: 10px;
+}
+/* Changing hyperlink formatting */
+.footerFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid black;
+}
+/* Setting up formatting for footer, items evenly spaced */
+
+.socials{
+    width:150px;
+    height:150px;
+    object-fit: cover;
+}
+/* settings for social media icon images */
+
+.rainbowHeader{
+    background-color: #FF0000;
+    animation: bgColorHeader 1s infinite linear;
+    /* begins an animation "bgColor that completes a cycle every 5s infinitely and transitions smoothly" */
+
+}
+@keyframes bgColorHeader {
+12.5% {
+    background-color: #FF0000;
+}
+25% {
+    background-color: #FFA500;
+}
+37.5% {
+    background-color: #FFFF00;
+}
+50% {
+    background-color: #7FFF00;
+}
+62.5% {
+    background-color: #00FFFF;
+}
+75% {
+    background-color: #0000FF;
+}
+87.5% {
+    background-color: #9932CC;
+}
+100% {
+    background-color: #FF1493;
+}
+/* each percent is what state the animation is at, without linear it would less smoothly between each color*/
+}
+.rainbowNav{
+    background-color: #FF0000;
+    animation: bgColorNav 3s infinite linear;
+
+}
+@keyframes bgColorNav {
+100% {
+    background-color: #FF0000;
+}
+12.5% {
+    background-color: #FFA500;
+}
+25% {
+    background-color: #FFFF00;
+}
+37.5% {
+    background-color: #7FFF00;
+}
+50% {
+    background-color: #00FFFF;
+}
+62.5% {
+    background-color: #0000FF;
+}
+75% {
+    background-color: #9932CC;
+}
+87.5% {
+    background-color: #FF1493;
+}
+}
+.rainbowContent{
+    background-color: #FF0000;
+    animation: bgColorContent 5s infinite linear;
+
+}
+@keyframes bgColorContent {
+87.5% {
+    background-color: #FF0000;
+}
+100% {
+    background-color: #FFA500;
+}
+12.5% {
+    background-color: #FFFF00;
+}
+25% {
+    background-color: #7FFF00;
+}
+37.5% {
+    background-color: #00FFFF;
+}
+50% {
+    background-color: #0000FF;
+}
+62.5% {
+    background-color: #9932CC;
+}
+75% {
+    background-color: #FF1493;
+}
+}
+.rainbowFooter{
+    background-color: #FF0000;
+    animation: bgColorFooter 7s infinite linear;
+
+}
+@keyframes bgColorFooter {
+75% {
+    background-color: #FF0000;
+}
+87.5% {
+    background-color: #FFA500;
+}
+100% {
+    background-color: #FFFF00;
+}
+12.5% {
+    background-color: #7FFF00;
+}
+25% {
+    background-color: #00FFFF;
+}
+37.5% {
+    background-color: #0000FF;
+}
+50% {
+    background-color: #9932CC;
+}
+62.5% {
+    background-color: #FF1493;
+}
+}
+/* interval and cycle speed are changed between the different animaitons */
